@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex-shrink</title>
+	<style>
+		.flex-container{
+			display: flex;
+			border: 1px solid black;
+			max-width: 350px;
+		}
+		.item{
+			background-color: orangered;
+			text-align: center;
+			font-size: 24px;
+			margin: 5px;
+		}
+		.s-1{
+			flex-shrink: 1;
+		}
+		.fg-1{
+			flex-grow: 1;
+		}
+		.s-0{
+			flex-shrink: 0;
+			flex-basis: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>flex-shrink</h1>
+	<div class="flex-container">
+		<div class="item s-1 fg-1">A</div>
+		<div class="item s-1 fg-1">B</div>
+		<div class="item s-1 fg-1">C</div>
+		<div class="item s-1 fg-1">D</div>
+		<div class="item s-1 fg-1">E</div>
+	</div>
+	<h1>flex-shrink</h1>
+	<div class="flex-container">
+		<div class="item s-1 fg-1">A</div>
+		<div class="item s-1 fg-1">boitre nulioga ryotuvi nasari vapo</div>
+		<div class="item s-1 fg-1">C</div>
+		<div class="item s-1 fg-1">D</div>
+		<div class="item s-1 fg-1">E</div>
+	</div>
+	<h1>flex-shrink:0 , 100px</h1>
+	<div class="flex-container">
+		<div class="item s-0 fg-1">A</div>
+		<div class="item s-0 fg-1">B</div>
+		<div class="item s-0 fg-1">Coisa feia é pensar que feio é feio</div>
+		<div class="item s-0 fg-1">D</div>
+		<div class="item s-0 fg-1">E</div>
+	</div>
+</body>
+</html>

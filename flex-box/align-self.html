@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>align self</title>
+	<style>
+		.flex-container{
+			max-width: 350px;
+			border: 1px solid black;
+			margin-bottom: 10px;
+			display: flex;
+			/*align-items: center;*/
+		}
+		.align-container{
+			align-items: center;
+		}
+		.item{
+			background-color: brown;
+			color: white;
+			font-size: 24px;
+			text-align: center;
+			margin: 5px;
+		}
+		.center{
+			align-self: center;
+		}
+		.start{
+			align-self: flex-start;
+		}
+		.end{
+			align-self: flex-end;
+		}
+		.baseline{
+			align-self: baseline;
+		}
+		.stretch{
+			align-self: stretch;
+		}
+		.auto{
+			align-self: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>Auto</h1>
+	<section class="flex-container align-container">
+		<div class="item auto">AAA</div>
+		<div class="item auto">123</div>
+		<div class="item auto">no riu tem peixe até tupi</div>
+		<div class="item auto">ITEM A</div>
+	</section>
+	<h1>stretch</h1>
+	<section class="flex-container">
+		<div class="item center">AAA</div>
+		<div class="item start">123</div>
+		<div class="item stretch">no riu tem peixe até tupi</div>
+		<div class="item end">ITEM 4</div>
+	</section>
+</body>
+</html>
